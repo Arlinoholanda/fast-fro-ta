@@ -1,0 +1,98 @@
+/* Estilos gerais para a página */
+.search-records-container {
+  padding: 20px;
+  max-width: 800px; /* Largura máxima da página */
+  margin: auto; /* Centraliza o conteúdo horizontalmente */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilo do título */
+h2 {
+  margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Estilo do campo de busca */
+.input-container {
+  display: flex; /* Usa Flexbox para alinhar os elementos */
+  justify-content: center; /* Centraliza os elementos horizontalmente */
+  align-content: center;
+  align-items: center; /* Alinha verticalmente os elementos */
+  margin-bottom: 20px; /* Espaço abaixo do container de input */
+}
+
+input[type="text"] {
+  width: 250px; /* Largura fixa do campo de busca */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px; /* Espaço entre o input e o botão */
+}
+
+/* Estilo dos botões */
+button {
+  padding: 10px 15px; /* Espaçamento interno do botão */
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: white; /* Cor do texto do botão */
+  border: none; /* Remove bordas do botão */
+  border-radius: 4px; /* Bordas arredondadas */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+}
+
+/* Efeito de hover para os botões */
+button:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo da tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Estilo do cabeçalho da tabela */
+th {
+  background-color: #f2f2f2;
+}
+
+/* Estilo para telas menores */
+@media (max-width: 768px) {
+  .input-container {
+    flex-direction: column; /* Muda a direção para coluna em telas menores */
+    align-items: stretch; /* Alinha os itens para ocupar toda a largura */
+  }
+
+  input[type="text"] {
+    margin-right: 0px; /* Remove a margem direita em telas menores */
+    margin-bottom: 10px; /* Adiciona espaço abaixo do campo de busca */
+    width: 100%; /* Campo de busca ocupa toda a largura disponível */
+  }
+
+  button {
+    width: 100%; /* Botão ocupa toda a largura disponível */
+  }
+}
+
+/* Estilo para telas muito pequenas */
+@media (max-width: 480px) {
+  th,
+  td {
+    font-size: 14px; /* Reduz o tamanho da fonte */
+  }
+
+  input[type="text"],
+  button {
+    font-size: 14px; /* Ajusta o tamanho da fonte do campo de busca e do botão */
+  }
+}
